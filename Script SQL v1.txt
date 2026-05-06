@@ -26,7 +26,7 @@ CREATE TABLE Ristorante (
     url VARCHAR(255),
     websiteUrl VARCHAR(255),
     premi TEXT, -- TEXT non ha limite di caratteri
-    greenStar BOOLEAN,
+    greenStar INT check (greenStar >= 1 and greenStar <= 5),
     servizi TEXT,
     descrizione TEXT,
     consegnaDomicilio BOOLEAN DEFAULT FALSE,
