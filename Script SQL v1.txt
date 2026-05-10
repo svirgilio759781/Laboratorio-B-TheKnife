@@ -5,12 +5,12 @@ CREATE TABLE Utente (
     -- si può cambiare manualmente l'id(se non è già esistente)
     username VARCHAR(50) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
-    nome VARCHAR(30) NOT NULL,
-    cognome VARCHAR(30) NOT NULL,
-    dataNascita DATE NOT NULL,
+    nome VARCHAR(30),
+    cognome VARCHAR(30),
+    dataNascita DATE,
     indirizzoDomicilio VARCHAR(255),
     cittaDomicilio VARCHAR(50),
-    telefono VARCHAR(20) NOT NULL,
+    telefono VARCHAR(20),
     ruolo VARCHAR(30) CHECK (ruolo IN ('Admin', 'Cliente', 'Gestore')) NOT NULL -- Forza tipologia a essere Admin, Cliente o Gestore
 );
 CREATE TABLE Ristorante (
