@@ -1,0 +1,34 @@
+TheKnife/
+├── pom.xml                        (Dipendenze: PostgreSQL, JavaFX/Swing, RMI)
+└── src/main/java/it/uninsubria/theknife/
+    ├── common/
+    │   ├── models/                (Entità - Plain Old Java Objects)
+    │   │   ├── Utente.java        (Contiene la lista Preferiti)
+    │   │   ├── Ristorante.java    (Dati del ristorante + Indirizzo come stringhe)
+    │   │   ├── Recensione.java    
+    │   │   ├── RispostaRecensione.java      (Risposta del gestore alla recensione)
+    │   │   ├── Prenotazione.java
+    │   │   └── Ruolo.java  	   (Enum)
+    │   └── interfaces/            (Contratto RMI)
+    │       └── ITheKnifeService.java
+    ├── server/
+    │   ├── ServerTK.java        (Avvio Server e Registro RMI)
+    │   ├── DBTK.java         (Singleton per connessione PostgreSQL)
+    │   ├── dao/                   (Pattern DAO - Query SQL)
+    │   │   ├── UtenteDAO.java
+    │   │   ├── RistoranteDAO.java
+    │   │   ├── RecensioneDAO.java
+    │   │   ├── RispostaRecensioneDAO.java
+    │   │   ├── PrenotazioneDAO.java
+    │   │   └── PreferitoDAO.java
+    │   └── service/               (Logica RMI)
+    │       └── TheKnifeServiceImpl.java
+    └── client/
+        ├── ClientTK.java        (Avvio Client e GUI)
+        ├── controller/            (Pattern MVC - Controller)
+        │   ├── LoginController.java
+        │   ├── SearchController.java
+        │   ├── DetailController.java
+        │   └── BookingController.java
+        └── view/                  (Gestione scene/finestre)
+            └── ViewManager.java
