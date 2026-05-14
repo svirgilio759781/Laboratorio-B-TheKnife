@@ -8,8 +8,7 @@ CREATE TABLE Utente (
     nome VARCHAR(30),
     cognome VARCHAR(30),
     dataNascita DATE,
-    indirizzoDomicilio VARCHAR(255),
-    cittaDomicilio VARCHAR(50),
+    Domicilio TEXT,
     telefono VARCHAR(20),
     ruolo VARCHAR(30) CHECK (ruolo IN ('Admin', 'Cliente', 'Gestore')) NOT NULL -- Forza tipologia a essere Admin, Cliente o Gestore
 );
@@ -20,13 +19,13 @@ CREATE TABLE Ristorante (
     locazione VARCHAR(50) NOT NULL,
     prezzo VARCHAR(5) NOT NULL,
     tipologiaCucina VARCHAR(100) NOT NULL,
-    latitudine DOUBLE PRECISION NOT NULL,
-    longitudine DOUBLE PRECISION NOT NULL,
+    latitudine DOUBLE PRECISION CHECK (latitudine BETWEEN -90 and 90) NOT NULL,
+    longitudine DOUBLE PRECISION CHECK (longitudine BETWEEN -180 and 180) NOT NULL,
     telefono VARCHAR(20),
     url TEXT,
     websiteUrl TEXT,
     premi TEXT, -- TEXT non ha limite di caratteri
-    greenStar INT check (greenStar >= 0 and greenStar <= 5),
+    greenStar INT CHECK (greenStar IN (greenStar >= 0 and greenStar <= 1)),
     servizi TEXT,
     descrizione TEXT,
     consegnaDomicilio BOOLEAN DEFAULT FALSE,
@@ -73,7 +72,8 @@ CREATE TABLE Prenotazione (
     data DATE NOT NULL,
     ora TIME NOT NULL,
     numeroPersone INT CHECK (numero_persone > 0) NOT NULL,
-    stato VARCHAR(50) DEFAULT 'In attesa',               -- Stato (In attesa, Confermata, Cancellata)
+    stato VARCHAR(50) CHECK (stato IN ('In_attesa', 'Confermata', 'Cancellata')) SET DEFAULT 'In_attesa', -- Stato (In_attesa, Confermata, Cancellata)
+    note TEXT,
     idUtente INT NOT NULL,
     idRistorante INT NOT NULL,
     CONSTRAINT fk_utente_prenotazione FOREIGN KEY (idUtente) REFERENCES Utente(id)
