@@ -35,4 +35,6 @@ Avvio del Client:
 (Apri un nuovo terminale)
 java -jar target/clientTK.jar
 
-*Anche se avvi prima il client e poi il server funzionerà, ma il client non si connetterà correttamente al database e non sarà in grado di recuperare o inviare dati
+Nota anche se avvi prima il client e poi il server funzionerà, ma il client non si connetterà correttamente al database e non sarà in grado di recuperare o inviare dati
+
+Nota sulle dipendenze: Il progetto utilizza Apache Maven per la gestione automatica delle dipendenze. Tutte le librerie necessarie (PostgreSQL driver, HikariCP, JavaFX) verranno scaricate e configurate automaticamente all'apertura del progetto tramite il file pom.xml. Non è necessario includere file .jar esterni manualmente.
