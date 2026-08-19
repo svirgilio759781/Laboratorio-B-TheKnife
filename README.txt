@@ -38,3 +38,13 @@ java -jar target/clientTK.jar
 Nota anche se avvi prima il client e poi il server funzionerà, ma il client non si connetterà correttamente al database e non sarà in grado di recuperare o inviare dati
 
 Nota sulle dipendenze: Il progetto utilizza Apache Maven per la gestione automatica delle dipendenze. Tutte le librerie necessarie (PostgreSQL driver, HikariCP, JavaFX) verranno scaricate e configurate automaticamente all'apertura del progetto tramite il file pom.xml. Non è necessario includere file .jar esterni manualmente.
+
+Procedura per ripristino del db:
+Scaricare il file TheKnifeBackup.sql.
+Aprire il terminale sul dispositivo.
+Creare il database eseguendo: 
+  createdb -U postgres TheKnifeVirgilio.
+  psql -U postgres -d TheKnifeVirgilio -f TheKnifeBackup.sql
+postgres: [nome_utente]
+TheKnifeVirgilio: [nome_database]
+TheKnifeBackup.sql: [nome_file].sql
