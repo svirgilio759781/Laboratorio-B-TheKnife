@@ -1,0 +1,7 @@
+it.uninsubria.theknife.client
+it.uninsubria.theknife.client.views
+it.uninsubria.theknife.common.interfaces
+it.uninsubria.theknife.common.models
+it.uninsubria.theknife.server
+it.uninsubria.theknife.server.dao
+it.uninsubria.theknife.server.service
