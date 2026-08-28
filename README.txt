@@ -48,3 +48,5 @@ Creare il database eseguendo:
 postgres: [nome_utente]
 TheKnifeVirgilio: [nome_database]
 TheKnifeBackup.sql: [nome_file].sql
+
+Video dimostrativo denominato "funzionalita" che illustra il funzionamento pratico del programma, rispecchiando fedelmente le procedure descritte nel manuale utente
