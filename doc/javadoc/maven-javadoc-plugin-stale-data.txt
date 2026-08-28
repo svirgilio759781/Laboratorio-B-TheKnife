@@ -1,0 +1,59 @@
+@options
+@packages
+-classpath
+'C:/Users/Stefano/.m2/repository/org/postgresql/postgresql/42.7.2/postgresql-42.7.2.jar;C:/Users/Stefano/.m2/repository/org/openjfx/javafx-controls/23/javafx-controls-23.jar;C:/Users/Stefano/.m2/repository/org/openjfx/javafx-controls/23/javafx-controls-23-win.jar;C:/Users/Stefano/.m2/repository/org/openjfx/javafx-graphics/23/javafx-graphics-23.jar;C:/Users/Stefano/.m2/repository/org/openjfx/javafx-graphics/23/javafx-graphics-23-win.jar;C:/Users/Stefano/.m2/repository/org/openjfx/javafx-base/23/javafx-base-23.jar;C:/Users/Stefano/.m2/repository/org/openjfx/javafx-base/23/javafx-base-23-win.jar;C:/Users/Stefano/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar;C:/Users/Stefano/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar'
+-encoding
+'UTF-8'
+-private
+-source
+'23'
+-sourcepath
+'C:/Users/Stefano/Desktop/Laboratorio B/TheKnife/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Stefano/Desktop/Laboratorio B/TheKnife/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'TheKnife 1.0-SNAPSHOT API'
+-nohelp
+-use
+-version
+-windowtitle
+'TheKnife 1.0-SNAPSHOT API'
+it.uninsubria.theknife.client
+it.uninsubria.theknife.client.views
+it.uninsubria.theknife.common.interfaces
+it.uninsubria.theknife.common.models
+it.uninsubria.theknife.server.dao
+it.uninsubria.theknife.server
+it.uninsubria.theknife.server.service
+C:\Users\Stefano\.m2\repository\org\postgresql\postgresql\42.7.2\postgresql-42.7.2.jar = 1778505355163
+C:\Users\Stefano\.m2\repository\org\openjfx\javafx-controls\23\javafx-controls-23.jar = 1778505353711
+C:\Users\Stefano\.m2\repository\org\openjfx\javafx-controls\23\javafx-controls-23-win.jar = 1778505360727
+C:\Users\Stefano\.m2\repository\org\openjfx\javafx-graphics\23\javafx-graphics-23.jar = 1778505353821
+C:\Users\Stefano\.m2\repository\org\openjfx\javafx-graphics\23\javafx-graphics-23-win.jar = 1778505362259
+C:\Users\Stefano\.m2\repository\org\openjfx\javafx-base\23\javafx-base-23.jar = 1778505353854
+C:\Users\Stefano\.m2\repository\org\openjfx\javafx-base\23\javafx-base-23-win.jar = 1778505355296
+C:\Users\Stefano\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar = 1783238034164
+C:\Users\Stefano\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar = 1751391368998
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\src\main\java = 1778505600677
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\allclasses-index.html = 1787572028428
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\allpackages-index.html = 1787572028435
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\constant-values.html = 1787572027700
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\element-list = 1787572027428
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\index-all.html = 1787572028529
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\index.html = 1787572028357
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\member-search-index.js = 1787572028451
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\module-search-index.js = 1787572028440
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\overview-summary.html = 1787572028541
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\overview-tree.html = 1787572028350
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\package-search-index.js = 1787572028443
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\search.html = 1787572028532
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\serialized-form.html = 1787572027765
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\tag-search-index.js = 1787572028454
+C:\Users\Stefano\Desktop\Laboratorio B\TheKnife\target\site\apidocs\type-search-index.js = 1787572028446
